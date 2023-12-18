@@ -7,6 +7,7 @@ import { CreateGameComponent }  from './pages/create-game/create-game.component'
 import { EditGameComponent }    from './pages/edit-game/edit-game.component';
 import { GameListComponent }    from './pages/game-list/game-list.component';
 import { GameComponent }        from './pages/game/game.component';
+import { HighlightItemDirective } from 'src/app/highlight-item.directive';
 
 
 @NgModule({
@@ -16,6 +17,7 @@ import { GameComponent }        from './pages/game/game.component';
     CreateGameComponent,
     GameComponent,
     GameListComponent,
+    HighlightItemDirective
   ],
   imports: [
     CommonModule,

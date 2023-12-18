@@ -1,19 +1,34 @@
 <div class="game-description">
     <div class="game-poster">
-        <img src="{{game?.background}}" alt="">
+        <img src="{{game?.background}}" alt="" width="100%">
     </div>
 
     <button routerLink="/games">Volver a la lista</button>
 
     <div class="game-info-container">
-        <div class="game-title-container">
+        <!-- <div class="game-title-container">
             {{game?.nombre}}
         </div>
         <div class="game-data-container">
             {{game?.genero}}
             {{game?.precio}}
-        </div>
+        </div> -->
+
+        <div class="card" style="width: 18rem;">
+            <div class="game-title-container">
+                <h3>{{game?.nombre}}</h3>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Comprar</a>
+            </div>
+          </div>
     </div>
     
     <!-- <button routerLink="/games/{{game?.id}}/modificar">Editar Juego</button> -->
+</div>
+
+<div>
+    <div></div>
 </div>

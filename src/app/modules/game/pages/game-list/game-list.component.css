@@ -25,6 +25,7 @@
     color: #eee;
     transition: transform 0.3s ease;
     cursor: pointer;
+    justify-content: space-between;
 }
 
 .game_container .img_container {
@@ -49,6 +50,10 @@
 
 .game_container .game_info {
     padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    height: 150px;
 }
 .game_container .game_info .requisitos_title {
     font-weight: 900;
