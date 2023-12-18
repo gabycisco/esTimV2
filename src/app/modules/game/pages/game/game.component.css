@@ -1,0 +1,36 @@
+.game-description {
+    position: relative ;
+    height: calc(100vh - 97px);
+    width: 100%;
+    overflow: hidden;
+}
+
+.game-poster {
+    position: absolute;
+    background-color: black;
+    height:  100vh;
+    background-image: cover;
+    
+}
+
+.game-info-container {
+    position: absolute;
+    z-index: 2;
+    background-color: black;
+    color:white;
+    display: flex;
+    flex-direction: column;
+    top: calc(97vh - 50%);
+    left: calc(100% - 95%);;
+}
+
+.game-title-container {
+ background-color: red;
+}
+
+
+.game-data-container {
+    background-color: green;
+    min-height: 300px;
+    padding: 100px 30px;
+}

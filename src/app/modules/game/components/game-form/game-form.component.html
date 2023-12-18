@@ -1,1 +1,21 @@
-<p>game-form works!</p>
+<div class="create-employee-container card col-8">
+    <form>
+      <label for="firstName"> Nombre
+        <input id="firstName"  type="text" placeholder="Ingrese el nombre">
+      </label>
+      <label for="lastName"> Apellido
+        <input id="lastName"  type="text" placeholder="Ingrese el apellido">
+      </label>
+      <label for="country"> Pais
+        <input id="country"  type="text" placeholder="Ingrese el pais">
+      </label>
+      <label for="salary"> Salario
+        <input id="salary"  type="number" placeholder="Ingrese el salario">
+      </label>
+    </form>
+  
+    <ng-content select="[boton]"></ng-content>
+  
+    <!-- <button class="col-2" type="submit">Guardar empleado</button> -->
+  </div>
+  

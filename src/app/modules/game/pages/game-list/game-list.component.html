@@ -5,7 +5,7 @@
         </div>
 
         <ng-template #listadoDeJuegos>
-            <div class="game_container"  *ngFor = "let game of games" appHighlightItem >
+            <div  [routerLink] = "[game.id]" class="game_container"  *ngFor = "let game of games" appHighlightItem >
                 <div class="img_container">
                     <img src="{{game.poster}}" alt=""> 
                     <div class="genero_container">
