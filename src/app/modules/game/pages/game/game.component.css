@@ -45,3 +45,20 @@ h3{
     min-height: 300px;
     padding: 100px 30px;
 }
+
+.game-nav {
+    background-color: #333333!important;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 7px;
+}
+
+.genero_container {
+    display: flex;
+    background-color: black;
+    color: white;
+    padding: 4px 7px;
+    font-weight: 700;
+    margin-bottom: 20px; min-width: 20px;
+}

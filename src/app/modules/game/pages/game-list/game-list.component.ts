@@ -54,7 +54,7 @@ export class GameListComponent {
       "genero": "Deportes",
       "precio": 39.99,
       "poster": "https://prod.assets.earlygamecdn.com/images/FIFA-23-Cover-2.jpeg?transform=galleryItem_webp",
-      "background": "https://www.digitaltrends.com/wp-content/uploads/2018/10/red-dead-redemption-2-review-feature-header.jpg?p=1"
+      "background": "https://fotografias-neox.atresmedia.com/clipping/cmsimages01/2022/07/21/84C1A49D-A685-4511-8093-D878A75A4518/fifa-23_98.jpg?crop=3672,2066,x168,y0&width=1900&height=1069&optimize=high&format=webply"
     },
     {
       "id": 4,
@@ -171,8 +171,8 @@ export class GameListComponent {
       },
       "genero": "Simulación, Social",
       "precio": 59.99,
-      "poster": "https://cdn2.steamgriddb.com/file/sgdb-cdn/grid/4128af1c3d6761cd2a7b902d63c633be.png",
-      "background": "https://www.digitaltrends.com/wp-content/uploads/2018/10/red-dead-redemption-2-review-feature-header.jpg?p=1"
+      "poster": "https://sm.ign.com/ign_es/screenshot/default/animal-crossing-new-horizons-ano-despues_9bfb.jpg",
+      "background": "https://pbs.twimg.com/media/GANndAqWMAAXH9F?format=jpg&name=large"
     },
     {
       "id": 13,
