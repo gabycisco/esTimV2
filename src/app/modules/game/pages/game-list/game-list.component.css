@@ -1,0 +1,85 @@
+.full_container {
+    background-color: #1a1a1a;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.games_container {
+    background-color: #1a1a1a;
+    width: 95%;
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 95vw;
+    justify-content: center;
+    margin: 15px 0 50px 0;
+}
+
+.game_container {
+    background-color: #2a2a2a;
+    width: 270px;
+    display: flex;
+    flex-direction: column;
+    margin: 20px 10px;
+    color: #eee;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.game_container .img_container {
+    width: 100%;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.game_container .img_container img {
+    width: 100%;
+}
+
+.game_container .img_container .genero_container {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background-color: black;
+    color: white;
+    padding: 4px 7px;
+    font-weight: 700;
+}
+
+.game_container .game_info {
+    padding: 10px;
+}
+.game_container .game_info .requisitos_title {
+    font-weight: 900;
+}
+
+.game_container .game_info .requisitos_container {
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    margin-bottom: 25px;
+}
+
+.game_container .game_info .requisitos_container .item_name{
+   font-weight: 700;
+}
+
+.game_container .game_info .precio{
+    background-color: black;
+    color: white;
+    padding: 4px 7px;
+    font-weight: 700;
+ }
+
+ .no_games_msj {
+    width: 100%;
+    height: 200px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1rem;
+    font-weight: 900;
+ }
