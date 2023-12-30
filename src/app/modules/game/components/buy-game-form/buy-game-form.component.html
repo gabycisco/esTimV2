@@ -1,0 +1,76 @@
+<div class="create-employee-container card col-8">
+    <form>
+        <h3>Confirmación de compra</h3>
+        <h5>Método de Pago</h5>
+        <label for="paymentMethod"> Selecciona el método de pago
+            <select id="paymentMethod" class="form-select" aria-label="Default select example">
+                <option selected>Seleccione un método</option>
+                <option value="1">Visa</option>
+                <option value="2">Mastercard</option>
+            </select>
+        </label>
+        <label for="cardNumber"> Número de tarjeta
+            <input id="cardNumber"  type="text" placeholder="1111222233334444">
+        </label>
+        <label for="day"> Mes de caducidad
+                <select id="day" class="form-select" aria-label="Default select example">
+                    <option selected>--</option>
+                    <option value="1">01</option>
+                    <option value="2">02</option>
+                    <option value="3">03</option>
+                    <option value="4">04</option>
+                    <option value="5">05</option>
+                    <option value="6">06</option>
+                    <option value="7">07</option>
+                    <option value="8">08</option>
+                    <option value="9">09</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </select>
+        </label>
+        <label for="year"> Año de caducidad
+            <select id="year" class="form-select" aria-label="Default select example">
+                <option selected>--</option>
+                <option value="2023">2023</option>
+                <option value="2024">2024</option>
+                <option value="2025">2025</option>
+                <option value="2026">2026</option>
+                <option value="2027">2027</option>
+                <option value="2028">2028</option>
+                <option value="2029">2029</option>
+                <option value="2030">2030</option>
+                <option value="2031">2031</option>
+                <option value="2032">2032</option>
+                <option value="2033">2033</option>
+                <option value="2034">2034</option>
+                <option value="2035">2035</option>
+                <option value="2036">2036</option>
+                <option value="2037">2037</option>
+                <option value="2038">2038</option>
+                <option value="2039">2039</option>
+                <option value="2040">2040</option>
+            </select>
+    </label>
+        <label for="country"> Código de seguridad
+        <input id="country"  type="text" placeholder="1234">
+        </label>
+        <h5>Información de Facturación</h5>
+        <label for="nameAndLastName"> Nombre y Apellido
+        <input id="nameAndLastName"  type="text" placeholder="Nombre y Apellido">
+        </label>
+        <label for="address"> Dirección
+        <input id="address     "  type="text" placeholder="Dirección">
+        </label>
+        <label for="country"> Localidad
+        <input id="country"  type="text" placeholder="Localidad">
+        </label>
+        <label for="salary"> País
+        <input id="salary"  type="number" placeholder="País">
+        </label>
+    </form>
+  
+    <ng-content select="[boton]"></ng-content>
+  
+  </div>
+  

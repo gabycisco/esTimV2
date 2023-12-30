@@ -1,11 +1,11 @@
 <div class="full_container">
     <div class="games_container">
-        <div *ngIf="gamesArray.length === 0; else listadoDeJuegos" class="no_games_msj">
+        <div *ngIf="games.length == 0; else listadoDeJuegos" class="no_games_msj">
             <span>No hay juegos publicados!</span>
         </div>
 
         <ng-template #listadoDeJuegos>
-            <div  [routerLink] = "[game.id]" class="game_container"  *ngFor = "let game of gamesArray" appHighlightItem >
+            <div  [routerLink] = "[game.id]" class="game_container"  *ngFor = "let game of games" appHighlightItem >
                 <div class="img_container">
                     <img src="{{game.poster}}" alt=""> 
                     <div class="genero-container">

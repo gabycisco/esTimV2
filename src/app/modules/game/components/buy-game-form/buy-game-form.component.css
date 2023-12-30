@@ -1,0 +1,21 @@
+.create-employee-container{
+    padding: 10px;
+    margin: 20px auto 20px auto;
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(255, 255, 255, .4);
+  }
+  label{
+    font-weight: bold;
+    width: 100%;
+    margin: 10px 0 10px 0;
+  }
+  input{
+    width: 100%;
+    border-radius: 5px;
+    height: 30px;
+    border: 1px solid rgba(0, 0, 0, .175);
+    padding: 8px;
+  }
+  
+  

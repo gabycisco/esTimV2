@@ -1,5 +1,7 @@
 .game-description {
     width: 100%;
+    min-height: calc(100vh - 97px);
+    overflow: hidden;
     background: rgb(2,0,36);
     background: linear-gradient(90deg, rgba(2,0,36,1) 26%, rgba(9,9,121,0) 64%, rgba(3,18,97,0) 100%);
 }
@@ -67,7 +69,7 @@ h3{
 
 .game-container {
     width: 100%;
-    height: calc(100vh - 60px);
+    height: calc(100vh - 97px);
     position: relative;
 }
 

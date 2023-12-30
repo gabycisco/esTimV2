@@ -1,28 +1,52 @@
-<nav class="game-nav">
-    <button routerLink="/games">Volver a la lista</button>
-</nav>
+
 <div class="game-description">
-    <div class="game-poster">
-        <img src="{{game?.background}}" alt="" width="100%">
-    </div>
-    <div class="game-info-container">
-        <div class="card" style="width: 18rem;">
-            <div class="game-title-container">
-                <h3>{{game?.nombre}}</h3>
+    <div class="game-container">
+        <div style="width: 50%; height: 100%; display: flex; justify-content: center; align-items: center;">
+            <div class="game-info-container">
+                <div class="card" style="width: 18rem;">
+                    <div class="game-title-container">
+                        <h3>{{game?.nombre}}</h3>
+                    </div>
+                    <div class="card-body">
+
+                        <span class="game-genero">
+                            {{game?.genero}}
+                        </span>
+                        <div style="padding: 15px 15px 30px 15px;">
+                            <p class="card-text">{{game?.descripcion_corta}}</p>
+                        
+                            <div style="display: flex; justify-content: space-around; align-items: center; width: 100%;">
+                                <div style="display: flex; justify-content: flex-start; align-items: center; width: 100%;"><h4 style="padding: 0!important;; margin: 0!important;">${{game?.precio}}</h4></div>
+                                <div style="display: flex; justify-content: flex-end; align-items: center; width: 100%;"><button routerLink="/games/{{game?.id}}/comprar" class="btn btn-primary" style="border-radius: 30px; width: 140px;">Comprar Ahora</button></div>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
             </div>
-            <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <div class="genero_container">
-                    <span>{{game?.genero}}</span>
-                </div>
-                <a href="#" class="btn btn-primary">COMPRAR AHORA</a>
-            </div>
-          </div>
+        </div>
+        <div class="game-poster">
+            <img src="{{game?.background}}" alt="" width="100%">
+        </div>
+
     </div>
     
-    <!-- <button routerLink="/games/{{game?.id}}/modificar">Editar Juego</button> -->
-</div>
-
-<div>
-    <div></div>
+    
+    <div class="info-container">
+       <div class="container">
+        <h2>Descripción</h2>
+        <p>{{game?.descripcion_larga}}</p>
+       </div>
+       <div class="container">
+        <h2>Requisitos de sistema</h2>
+        <ul>
+            <li>CPU: {{game?.requisito_cpu}}</li>
+            <li>Memoria: {{game?.requisito_memoria}}</li>
+            <li>Almacenamiento: {{game?.requisito_almacenamiento}}</li>
+        </ul>
+       </div>
+       <div class="container">
+        <button class="btn btn-primary" routerLink="/games/{{game?.id}}/modificar">Editar Juego</button>
+       </div>
+    </div>
+    
 </div>

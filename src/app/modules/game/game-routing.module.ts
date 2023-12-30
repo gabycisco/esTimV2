@@ -4,11 +4,13 @@ import { CreateGameComponent } from './pages/create-game/create-game.component';
 import { GameComponent } from './pages/game/game.component';
 import { EditGameComponent } from './pages/edit-game/edit-game.component';
 import { GameListComponent } from './pages/game-list/game-list.component';
+import { BuyGameComponent } from './pages/buy-game/buy-game.component';
 
 const routes: Routes = [
   {path: 'crear', component: CreateGameComponent},
   {path: ':id', component: GameComponent},
   {path: ':id/modificar', component: EditGameComponent},
+  {path: ':id/comprar', component: BuyGameComponent},
   {path: '', component: GameListComponent},
   {path: '**', redirectTo: '/games', pathMatch: 'full'}
 ];

@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { GameService } from 'src/app/services/game.service';
 
+
 export interface Game {
   id: number;
   nombre: string;
@@ -16,13 +17,13 @@ export interface Game {
   descripcion_larga: string;
   es_destacado: boolean;
 }
-@Component({
-  selector: 'app-game',
-  templateUrl: './game.component.html',
-  styleUrls: ['./game.component.css']
-})
-export class GameComponent {
 
+@Component({
+  selector: 'app-buy-game',
+  templateUrl: './buy-game.component.html',
+  styleUrls: ['./buy-game.component.css']
+})
+export class BuyGameComponent {
   game?: Game;
 
   constructor(private activatedRoute: ActivatedRoute, private gameService: GameService) {
@@ -30,5 +31,4 @@ export class GameComponent {
       this.game = data
     })
   }
-
 }

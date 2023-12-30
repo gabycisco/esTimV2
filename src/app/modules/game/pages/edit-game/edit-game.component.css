@@ -1,0 +1,12 @@
+.title-container {
+    margin: 10px auto;
+}
+button{
+    margin: 15px 0px 0 10px;
+    height: max-content;
+    background-color: #1976d2;
+    color: #fff;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+}
